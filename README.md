@@ -1,3 +1,4 @@
+
 # terraform-own-assignment
 
 Remember for backend configuration. First create backend requirement like S3 bucket and dynamodb for statelocking through terraform. Once it done that add backend section in terraform for maintaining the statefile..
@@ -330,3 +331,18 @@ Remember for backend configuration. First create backend requirement like S3 buc
             name: nginx
             state: started
             enabled: yes
+
+# ssh key creation
+
+    ssh-keygen -t rsa -b 2048 -f my-key
+
+
+# install awscli on local machine
+  
+      https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+ 
+    
+# aws command
+
+    -1 aws configure    ---> to connect aws account from localmachine
+    -2  aws sts get-caller-identity  ---> set caller indentity mean aws account detailss 
